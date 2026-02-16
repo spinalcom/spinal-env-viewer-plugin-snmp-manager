@@ -1,0 +1,31 @@
+{
+	"name": "spinal-env-viewer-plugin-snmp-manager",
+	"version": "1.0.0",
+	"main": "src/index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"dependencies": {
+		"uuid": "^8.3.2"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"description": "",
+	"browserify": {
+		"transform": [
+			"vueify",
+			"babelify",
+			"imgurify"
+		]
+	},
+	"spinalDependencies": {
+		"spinal-connector-service": "git+https://github.com/spinalcom/spinal-connector-service.git",
+		"spinal-env-viewer-context-menu-service": "git+https://github.com/spinalcom/spinal-env-viewer-context-menu-service.git",
+		"spinal-env-viewer-graph-service": "git+https://github.com/spinalcom/Spinal-Graph-Service.git",
+		"spinal-env-viewer-plugin-device_profile": "git+https://github.com/spinalcom/spinal-env-viewer-plugin-device_profile.git",
+		"spinal-env-viewer-plugin-network-tree-service": "git+https://github.com/spinalcom/spinal-env-viewer-plugin-network-tree-service.git",
+		"spinal-model-bmsnetwork": "git+https://github.com/spinalcom/spinal-model-bmsnetwork.git",
+		"spinal-model-snmp": "git+https://github.com/spinalcom/spinal-model-snmp.git"
+	}
+}
